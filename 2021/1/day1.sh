@@ -16,7 +16,7 @@ main() {
   for line in "${input[@]}"; do
 
     if [[ $index -eq 0 ]]; then
-      let index=$index+1
+      index=$(expr $index+1)
       continue
     fi
 
